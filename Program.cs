@@ -35,7 +35,7 @@ namespace ticTacToe
 
                     listOfSpaces = updateGrid(listOfSpaces, userChoice, currentPlayer);
                     
-                    checkWin = checkForWin(listOfSpaces, currentPlayer);
+                    checkWin = checkForWin(listOfSpaces, currentPlayer, turns);
                 }
                 if (checkWin == true)
                 {
@@ -52,7 +52,7 @@ namespace ticTacToe
                     }
                 }
 
-
+            }
             void drawGrid(List<string> listOfSpaces)
             {
                 Console.WriteLine($" {listOfSpaces[0]} | {listOfSpaces[1]} | {listOfSpaces[2]} ");
@@ -75,7 +75,7 @@ namespace ticTacToe
                 return listOfSpaces;
             }
 
-            bool checkForWin(List<string> listOfSpaces, string currentPlayer)
+            bool checkForWin(List<string> listOfSpaces, string currentPlayer, int turns)
             {
                 if (listOfSpaces[0] == currentPlayer && listOfSpaces [1] == currentPlayer && listOfSpaces[2] == currentPlayer||
                     listOfSpaces[3] == currentPlayer && listOfSpaces [4] == currentPlayer && listOfSpaces[5] == currentPlayer||
@@ -117,7 +117,7 @@ namespace ticTacToe
             }
 
             
-            }
+            
 
             }
 
