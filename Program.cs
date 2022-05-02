@@ -9,14 +9,50 @@ namespace ticTacToe
         static void Main(string[] args)
         {
             
-            string[] spaces = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
-            List<string> listOfSpaces = new List<string>(spaces);
+            bool keepPlaying = true;
 
-            int turns = -1;
+            while (keepPlaying)
+            {
+                string[] spaces = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+                List<string> listOfSpaces = new List<string>(spaces);
 
-            bool checkWin = false;
+                int turns = -1;
 
-            
+                bool checkWin = false;
+                
+                drawGrid(listOfSpaces);
+                Console.WriteLine("Welcome to Tic Tac Toe! Enter the number (1-9)");
+                Console.WriteLine("that indicates the space you would like to mark");
+
+                while (checkWin == false)
+                {
+                    turns += 1;
+                    string currentPlayer = decideCurrentPlayer(turns);
+                    Console.WriteLine($"Player {currentPlayer}:");
+
+                    string userChoiceString = Console.ReadLine();
+                    int userChoice = int.Parse(userChoiceString);
+
+                    listOfSpaces = updateGrid(listOfSpaces, userChoice, currentPlayer);
+                    
+                    checkWin = checkForWin(listOfSpaces, currentPlayer);
+                }
+                if (checkWin == true)
+                {
+                    Console.WriteLine("Would you like to play again? (y/n): ");
+                    string playAgain = Console.ReadLine();
+
+                    if (playAgain == "y")
+                    {
+                        keepPlaying = true;
+                    }
+                    else
+                    {
+                        keepPlaying = false;
+                    }
+                }
+
+
             void drawGrid(List<string> listOfSpaces)
             {
                 Console.WriteLine($" {listOfSpaces[0]} | {listOfSpaces[1]} | {listOfSpaces[2]} ");
@@ -79,25 +115,9 @@ namespace ticTacToe
                     return "O";
                 }
             }
+
             
-            drawGrid(listOfSpaces);
-            Console.WriteLine("Welcome to Tic Tac Toe! Enter the number (1-9)");
-            Console.WriteLine("that indicates the space you would like to mark");
-
-            while (checkWin == false)
-            {
-                turns += 1;
-                string currentPlayer = decideCurrentPlayer(turns);
-                Console.WriteLine($"Player {currentPlayer}:");
-
-                string userChoiceString = Console.ReadLine();
-                int userChoice = int.Parse(userChoiceString);
-
-                listOfSpaces = updateGrid(listOfSpaces, userChoice, currentPlayer);
-                
-                checkWin = checkForWin(listOfSpaces, currentPlayer);
             }
-
 
             }
 
