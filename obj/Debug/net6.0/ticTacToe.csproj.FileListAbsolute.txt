@@ -1,0 +1,15 @@
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\bin\Debug\net6.0\ticTacToe.exe
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\bin\Debug\net6.0\ticTacToe.deps.json
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\bin\Debug\net6.0\ticTacToe.runtimeconfig.json
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\bin\Debug\net6.0\ticTacToe.dll
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\bin\Debug\net6.0\ticTacToe.pdb
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.csproj.AssemblyReference.cache
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.AssemblyInfoInputs.cache
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.AssemblyInfo.cs
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.csproj.CoreCompileInputs.cache
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.dll
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\refint\ticTacToe.dll
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.pdb
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ticTacToe.genruntimeconfig.cache
+C:\Users\reedc\OneDrive\Desktop\Programming With Classes\ticTacToe\obj\Debug\net6.0\ref\ticTacToe.dll
